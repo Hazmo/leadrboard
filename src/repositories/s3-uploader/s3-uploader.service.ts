@@ -20,6 +20,8 @@ export class S3UploaderService {
       .then(res => res.Body.toString('utf-8'))
       .catch(err => err);
 
+      console.log(leaderboard_string);
+
     return JSON.parse(leaderboard_string);
   }
 }
